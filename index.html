@@ -1,117 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="file.jpg" />
-    <title>Privacy Policy</title>
+    <title>Privacy Policy | Quran-e-Majeed</title>
+    <link rel="icon" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&family=LXGW+WenKai+Mono+TC&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        overflow-x: hidden;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Kanit", sans-serif;
+        background: #fff;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: white;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: rgb(255, 196, 0);
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.897);
+      }
+
+      /* Header */
+      .header {
+        background: rgb(255, 149, 0);
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      h1 {
+        color: white;
+        font-family: "Kanit", sans-serif;
+        font-weight: 700;
+        font-size: clamp(1.4rem, 5vw, 2rem);
+        text-align: center;
+      }
+
+      .subtitle {
+        color: rgba(255, 255, 255, 0.85);
+        font-family: "Kanit", sans-serif;
+        font-size: clamp(0.75rem, 2vw, 0.9rem);
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        text-align: center;
+      }
+
+      /* Date */
+      .last-updated {
+        font-style: italic;
+        font-family: "LXGW WenKai Mono TC", monospace;
+        font-weight: 400;
+        text-align: center;
+        margin: 20px auto 10px;
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        display: block;
+      }
+
+      /* Main content */
+      .terms {
+        color: black;
+        padding: 20px 24px 60px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 500;
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: clamp(0.9rem, 2.2vw, 1rem);
+        line-height: 1.85;
+      }
+
+      .terms p {
+        font-style: italic;
+        font-family: "LXGW WenKai Mono TC", monospace;
+        font-weight: 400;
+        text-align: center;
+        margin: 16px 0;
+        font-size: clamp(0.8rem, 2vw, 0.95rem);
+      }
+
+      /* Section headings */
+      .section-title {
+        display: inline-block;
+        background-color: rgb(255, 217, 0);
+        padding: 5px 8px;
+        margin: 28px 0 10px;
+        font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+      }
+
+      /* Links */
+      a {
+        color: rgb(255, 149, 0);
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        word-break: break-all;
+      }
+
+      a:hover {
+        color: black;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+      }
+
+      /* Service boxes for third-party */
+      .service-box {
+        border-left: 4px solid rgb(255, 217, 0);
+        background: #fffdf0;
+        padding: 14px 16px;
+        margin: 12px 0;
+        font-size: clamp(0.85rem, 2vw, 0.95rem);
+        line-height: 1.75;
+      }
+
+      .service-box strong {
+        color: rgb(200, 120, 0);
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .header {
+          height: 160px;
+        }
+        .terms {
+          padding: 16px 18px 50px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .header {
+          height: 130px;
+        }
+        .terms {
+          padding: 14px 14px 40px;
+          font-weight: 700;
+        }
+        .section-title {
+          padding: 3px 6px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="header"></div>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: 10/20/24</p>
-    <h2 class="terms">
-      This Privacy Policy applies to the games developed by Mujtaba Productions.
-      This policy explains how we collect, use, and protect information when you
-      play our games.
+    <div class="header">
+      <h1>Privacy Policy</h1>
+      <span class="subtitle">Quran-e-Majeed — Mujtaba Creates</span>
+    </div>
 
-      <br />
-      <br />
+    <span class="last-updated">Effective Date: February 22, 2026</span>
 
-      <span class="num1">1. Data We Collect</span>
-      <br />
-      Our games may collect different types of information depending on the
-      specific game. Below are the general categories:
+    <div class="terms">
+      This Privacy Policy applies to the <strong>Quran-e-Majeed</strong> app
+      developed by <strong>Mujtaba Creates</strong>. It explains how we handle
+      information when you use our app. We are committed to protecting your
+      privacy and being fully transparent.
 
-      <br />
+      <br /><br />
 
-      <br />
-      Personal Data: Some games may request personal information such as your
-      name, email address, or other contact details if you opt into features
-      like account creation or newsletters.
-      <br />
-      Device Information: Some games may collect information about your device,
-      such as device type, operating system, and game performance data for
-      analytics purposes.
-      <br />
-      Usage Data: We may collect information on how you use the game, including
-      in-game actions, game session times, and interaction data. This data helps
-      us improve the gameplay experience.
+      <span class="section-title">1. Location Access</span><br />
+      We request location access solely to calculate accurate prayer times. Your
+      location coordinates are used only for this purpose and are sent to the
+      Aladhan API to retrieve prayer times. We do not store your location on any
+      external server, and it is never used for tracking, profiling, or any
+      other purpose.
 
-      <br />
-      <br />
+      <br /><br />
 
-      <span class="num2">2. Data Usage</span>
-      <br />
-      We may use the collected data for the following purposes:
+      <span class="section-title">2. Data Collection</span><br />
+      We do not collect personal information such as your name or email address.
+      The app only stores your last-read Surah and verse locally on your device
+      for your convenience. No personal data is transmitted to us or any third
+      party beyond what is described in this policy.
 
-      <br />
-      <br />
+      <br /><br />
 
-      To provide and maintain the game
-      <br />
-      To fix bugs and improve game performance
-      <br />
-      To analyze game usage and improve game features
-      <br />
-      To communicate with you regarding updates or in-game events
+      <span class="section-title">3. Third-Party Services</span><br />
+      Our app uses the following trusted third-party services:
 
-      <p>Note: Some games may not collect any data at all.</p>
-      <br />
-      <br />
+      <br /><br />
 
-      <span class="num3">3. Third-Party Services</span>
-      <br />
-      Some games may integrate third-party services such as analytics tools
-      (e.g., Google Analytics) or advertising networks (e.g., AdMob). These
-      third parties may collect data such as device information and usage
-      statistics under their own privacy policies. We encourage you to review
-      the privacy policies of any third-party services we may use in our games.
+      <div class="service-box">
+        <strong>Aladhan API (aladhan.com)</strong><br />
+        Used to fetch prayer times based on your location. Your approximate
+        location coordinates are sent to their servers solely for this purpose,
+        without storing any identity information.
+      </div>
 
-      <br />
-      <br />
+      <div class="service-box">
+        <strong>Arabic Text</strong><br />
+        IndoPak Quran Text from typemybook.com (originally from InPage Quran
+        Publishing Software), verified by Ayman Siddiqui and R. Siddiqua for
+        QuranWBW.com and Quran.com. Made for Sadaqa-e-Jaria purposes.
+      </div>
 
-      <span class="num4">4. Data Security</span>
-      <br />
-      We are committed to ensuring the security of your data. While no system
-      can guarantee 100% security, we take reasonable measures to protect your
-      information from unauthorized access or disclosure.
+      <div class="service-box">
+        <strong>Font — IndoPak Nastaleeq</strong><br />
+        From the Quranic Universal Library, created by Ayman Siddiqui and R.
+        Siddiqua.<br />
+        <a
+          href="https://qul.tarteel.ai/resources/font/242"
+          target="_blank"
+          rel="noopener"
+          >qul.tarteel.ai/resources/font/242</a
+        >
+      </div>
 
-      <br />
-      <br />
+      <div class="service-box">
+        <strong>Translation — Al Bilal Muhammad et al (2018)</strong><br />
+        Public Domain — Unlicense.<br />
+        <a
+          href="https://github.com/fawazahmed0/quran-api/tree/1"
+          target="_blank"
+          rel="noopener"
+          >github.com/fawazahmed0/quran-api</a
+        >
+      </div>
 
-      <span class="num5">5. Children's Privacy</span>
-      <br />
-      Our games are not directed at children under the age of 13, and we do not
-      knowingly collect personal information from children. If we become aware
-      that we have collected personal information from a child under 13, we will
-      take steps to delete that information.
+      <p>
+        Note: The translation is one interpretation of the meanings of the
+        Quran. For detailed understanding, please consult scholars and multiple
+        translations.
+      </p>
 
-      <br />
-      <br />
+      <span class="section-title">4. Children's Privacy</span><br />
+      This app is safe for all age groups and does not collect personal data
+      from anyone, including children under the age of 13. If we become aware
+      that any such data has been collected, we will promptly take steps to
+      delete it.
 
-      <span class="num6">6. Changes to This Privacy Policy</span>
-      <br />
+      <br /><br />
+
+      <span class="section-title">5. Security</span><br />
+      We protect your privacy by never storing data on any external server. Your
+      data stays on your device and is never shared. While no system can
+      guarantee 100% security, we take all reasonable measures to ensure your
+      information remains safe.
+
+      <br /><br />
+
+      <span class="section-title">6. Offline Content</span><br />
+      All Surahs and translations are either bundled with the app or downloaded
+      once for offline use, ensuring secure and reliable access to the Quran
+      without requiring a continuous internet connection.
+
+      <br /><br />
+
+      <span class="section-title">7. Changes to This Policy</span><br />
       We may update this Privacy Policy from time to time. Any changes will be
-      posted on this page, and the "Last updated" date will reflect the latest
-      revision. We recommend checking this policy periodically for any updates.
+      reflected on this page with an updated effective date. We recommend
+      reviewing this policy periodically to stay informed about how we are
+      protecting your information.
+      <br /><br />
 
-      <br />
-      <br />
-
-      <span class="num7">7. Contact Us </span>
-      <br />
-      If you have any questions about this Privacy Policy or the data we
-      collect, please contact us at:
-
-      <br />
-      <br />
-
-      <a href="http://mujtabamustafa2909@gmail.com"
+      <span class="section-title">8. Contact Us</span><br />
+      If you have any questions about this Privacy Policy or about data handling
+      in our app, please reach out to us at:
+      <br /><br />
+      <a href="mailto:mujtabamustafa2909@gmail.com"
         >mujtabamustafa2909@gmail.com</a
       >
-      <br />
-    </h2>
+    </div>
   </body>
 </html>
